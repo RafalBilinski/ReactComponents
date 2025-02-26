@@ -28,7 +28,7 @@ class MyToDoList extends React.Component {
     });
   }
   render() {
-    const items = this.state.toDoList.map(i => <li>{i}</li>);; 
+    const items = this.state.toDoList.map(i => <li key={i}>{i}</li>);; 
     return (
       <div>
         <textarea
