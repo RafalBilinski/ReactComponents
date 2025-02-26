@@ -6,13 +6,13 @@ const textAreaStyles = {
 class MyToDoList extends React.Component {
   constructor(props) {
     super(props);
-    // Change code below this line
+   
     this.state = {
       userInput: '',
       toDoList: [],
     };
 
-    // Change code above this line
+   
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -28,7 +28,7 @@ class MyToDoList extends React.Component {
     });
   }
   render() {
-    const items = this.state.toDoList.map(i => <li>{i}</li>);; // Change this line
+    const items = this.state.toDoList.map(i => <li>{i}</li>);; 
     return (
       <div>
         <textarea
